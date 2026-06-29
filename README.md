@@ -44,7 +44,7 @@ Below are the key fields from the schema utilized in the SQL queries:
 ---
 
 ## 🔎 Exploring the Dataset
-<details>
+<details open>
   <summary><b>Query 01: Calculate total visit, pageview, transaction for Q1/2017</b></summary>
   
   <br>
@@ -77,7 +77,7 @@ Below are the key fields from the schema utilized in the SQL queries:
   * **Strong Conversion Growth:** The conversion rate (Transactions/Visits) grew from **1.10%** in Jan, to **1.18%** in Feb, peaking at **1.42%** in March.
 
 
-<details>
+<details open>
   <summary><b>Query 02: Bounce rate per traffic source in July 2017</b></summary>
   <br>
   **🎯 Business Purpose:** To evaluate the quality of traffic from various acquisition channels by identifying which sources bring in the most non-interacting users. 
@@ -110,7 +110,7 @@ ORDER BY total_visits DESC;
   | facebook.com | 191 | 102 | 53.40% |
   </details>
 
-<details>
+<details open>
   <summary><b>Query 03: Revenue by traffic source by week, by month in June 2017</b></summary>
   
   <br>
@@ -176,7 +176,7 @@ ORDER BY total_visits DESC;
 **Strategic Implication:** Your acquisition channels (Social, Organic/Paid Search) are deeply misaligned with your landing page experience. Users clicking from YouTube or Facebook expect a specific story or product, but hit a wall of friction upon landing. The marketing budget spent on these channels is currently bleeding money. 
 **Actionable Step:** We need to improve the landing pages for Google and Social Media visitors so they stay and shop, rather than leaving right away.
 
-<details>
+<details open>
   <summary><b>Query 04: Average number of pageviews by purchaser type (June & July 2017)</b></summary>
   
   <br>
@@ -235,7 +235,7 @@ A user willing to click through 300+ pages wants to buy something (high intent),
   * **Actionable Step:** Audit the search bar, filters, and categories to identify why non-purchasers are scrolling through 300+ pages without finding products
 
 
-<details>
+<details open>
   <summary><b>Query 05: Average number of transactions per user that made a purchase in July 2017</b></summary>
   
   <br>
@@ -263,7 +263,7 @@ A user willing to click through 300+ pages wants to buy something (high intent),
 
   </details>
 
-<details>
+<details open>
   <summary><b>Query 06: Average amount of money spent per session. Only include purchaser data in July 2017</b></summary>
   
   <br>
@@ -296,7 +296,7 @@ The Insight: In July, the average paying customer completed 4.16 transactions in
 
 Actionable Step: Since these users buy frequently but spend little per session, implementing a loyalty program, or aggressive "Buy 2 Get 1" could increase the AOV without hurting their high purchase frequency.
 
-<details>
+<details open>
   <summary><b>Query 07: Other products purchased by customers who bought "YouTube Men's Vintage Henley" (July 2017)</b></summary>
   
   <br>
@@ -349,7 +349,7 @@ ORDER BY quantity DESC;
   </details>
 
 
-<details>
+<details open>
   <summary><b>Query 08: Calculate cohort map from product view to add to cart to purchase in Q1 2017</b></summary>
   
   <br>
@@ -423,15 +423,5 @@ Queries 01 and 08 show an interesting trend in the first quarter of the year:
 * **Strategic Implication:** Having fewer visitors isn't a bad thing if the site is getting better at turning them into buyers. The quality of our traffic is improving.
 ---
 
-## 🚩 Final Conclusion
----
-* Working with the Google Analytics dataset helped me bridge the gap between technical SQL skills and business strategy:
-* **CTEs (WITH):** Structured complex logic (like conversion funnels) into clean, readable queries.
-* **Nested Data:** Used UNNEST() in BigQuery to extract information from complex arrays.
-* **KPI Calculations:** Applied advanced aggregations (SUM, COUNT(DISTINCT)) to measure metrics like Bounce Rate and Average Order Value.
-* **Date Functions:** Used FORMAT_DATE and PARSE_DATE to analyze time-based trends.
-* **Business Mindset:** Learned to use SQL not just to pull data, but to uncover actionable insights and solve real business problems.
----
-**Thank you for reading!** Feel free to reach out or connect if you have any questions or feedback regarding this analysis.
 
 
